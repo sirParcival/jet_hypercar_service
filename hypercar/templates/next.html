@@ -1,0 +1,8 @@
+{% extends 'base.html' %}
+{% block content %}
+{% if next %}
+    <div>Next ticket #{{ next }}</div>
+{% else %}
+    <div>Waiting for the next client</div>
+{% endif %}
+{% endblock %}
